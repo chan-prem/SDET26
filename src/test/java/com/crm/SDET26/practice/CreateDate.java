@@ -21,6 +21,7 @@ public static void main(String[] args) {
 	String time2 = time.replace(":", "_");
 	
 	System.out.println(time2);
+	System.out.println(time2);
 	
 
 }
