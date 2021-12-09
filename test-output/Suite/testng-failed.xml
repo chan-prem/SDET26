@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.crm.SDET26.Opportunity.CreateOpportunitywithSalesStageClosedLost">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="createOpportunitywithSalesStageClosedLost"/>
+          <include name="disconnectDB"/>
+          <include name="browserLaunch"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.Opportunity.CreateOpportunitywithSalesStageClosedLost -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
