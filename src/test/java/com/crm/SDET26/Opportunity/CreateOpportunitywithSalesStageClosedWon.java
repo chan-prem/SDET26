@@ -1,6 +1,7 @@
 package com.crm.SDET26.Opportunity;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -13,6 +14,7 @@ import com.crm.SDET26.pomRepository.OpportunityInformationPage;
 import com.crm.SDET26.pomRepository.OrganizationPage;
 import com.crm.SDET26.pomRepository.OrganizationInformationPage;
 
+@Listeners(com.crm.SDET26.genericUtility.ListenerImpClass.class)
 public class CreateOpportunitywithSalesStageClosedWon extends BaseClass{
 @Test(groups = "RegressionTest")
 	public void createOpportunitywithSalesStageClosedWon() throws Throwable {
@@ -23,7 +25,7 @@ public class CreateOpportunitywithSalesStageClosedWon extends BaseClass{
 		String oppname = eLib.getDataFromExcel("Oppurtunity", 0, 1) + randomNum;
 		String group = eLib.getDataFromExcel("Oppurtunity", 0, 3);
 		String salesstage = eLib.getDataFromExcel("Oppurtunity", 4, 5);
-			
+			 
     //Nav to Organization 
 			HomePage hp = new HomePage(driver);
 			hp.getOrganizationLink().click();

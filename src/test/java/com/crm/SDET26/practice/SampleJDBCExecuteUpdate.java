@@ -13,15 +13,16 @@ public class SampleJDBCExecuteUpdate {
 
 	public static void main(String[] args) throws SQLException {
 		
-		Driver driverRef = new Driver();
-		DriverManager.registerDriver(driverRef);
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sdet26", "root", "root");
-		Statement stat = con.createStatement();
 
-		int result = stat.executeUpdate("insert into empInfo  ('Batman',12,'Maryland');");
 
 		try {
 
+			Driver driverRef = new Driver();
+			DriverManager.registerDriver(driverRef);
+			Statement stat = con.createStatement();
+
+			int result = stat.executeUpdate("insert into empInfo  ('Batman',12,'Maryland');");
 			if(result == 1)
 			{
 				Reporter.log("data created successfully", true);

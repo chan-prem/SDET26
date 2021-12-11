@@ -16,7 +16,6 @@ import com.crm.SDET26.pomRepository.OrganizationInformationPage;
 
 @Listeners(com.crm.SDET26.genericUtility.ListenerImpClass.class)
 public class OpportunityWithDiffSalesStage extends BaseClass{
-
 	
 		
 		@Test(groups = "RegressionTest")

@@ -1,6 +1,7 @@
 package com.crm.SDET26.Opportunity;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -13,6 +14,8 @@ import com.crm.SDET26.pomRepository.OpportunityInformationPage;
 import com.crm.SDET26.pomRepository.OrganizationPage;
 import com.crm.SDET26.pomRepository.OrganizationInformationPage;
 
+
+@Listeners(com.crm.SDET26.genericUtility.ListenerImpClass.class)
 public class CreateOpportunitywithSalesStageNegotiationOrReview extends BaseClass{
 
 	@Test(groups = "RegressionTest")

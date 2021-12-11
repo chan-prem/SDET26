@@ -14,6 +14,17 @@
           <include name="logout"/>
         </methods>
       </class> <!-- com.crm.SDET26.Opportunity.CreateOpportunitywithSalesStageClosedLost -->
+      <class name="com.crm.SDET26.Opportunity.ClickOnSaveAndAllTheFillSareSaveOrNot">
+        <methods>
+          <include name="cickOnSaveAndAllTheFillSareSaveOrNot"/>
+          <include name="dataBaseConnection"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="disconnectDB"/>
+          <include name="browserLaunch"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.Opportunity.ClickOnSaveAndAllTheFillSareSaveOrNot -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
