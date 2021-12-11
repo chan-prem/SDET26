@@ -25,7 +25,7 @@ public class ExcelUtility {
 	 * @throws Throwable
 	 */
 	public String getDataFromExcel(String sheetName , int rowNum, int celNum) throws Throwable {
-		FileInputStream fis  = new FileInputStream("./src/main/resources/VtigerTestSpecificData.xlsx");
+		FileInputStream fis  = new FileInputStream("./src/test/resources/VtigerTestSpecificData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetName);
 		Row row = sh.getRow(rowNum);
@@ -40,7 +40,7 @@ public class ExcelUtility {
 	 * @throws Throwable
 	 */
 	public int getRowCount(String sheetName) throws Throwable {
-		FileInputStream fis  = new FileInputStream("./src/main/resources/VtigerTestSpecificData.xlsx");
+		FileInputStream fis  = new FileInputStream("./src/test/resources/VtigerTestSpecificData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetName);
 		wb.close();
@@ -48,13 +48,13 @@ public class ExcelUtility {
 	}
 	
 	public void setDataExcel(String sheetName , int rowNum, int celNum ,String data) throws Throwable {
-		FileInputStream fis  = new FileInputStream("./src/main/resources/VtigerTestSpecificData.xlsx");
+		FileInputStream fis  = new FileInputStream("./src/test/resources/VtigerTestSpecificData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetName);
 		Row row = sh.getRow(rowNum);
 		Cell cel = row.createCell(celNum);
 		cel.setCellValue(data);
-		FileOutputStream fos = new FileOutputStream("./src/main/resources/VtigerTestSpecificData.xlsx");
+		FileOutputStream fos = new FileOutputStream("./src/test/resources/VtigerTestSpecificData.xlsx");
 		wb.write(fos);
 		wb.close();
 		

@@ -37,9 +37,11 @@ public class BaseClass {
 		String browser = fLib.getPropertyKeyValue("browser");
 
 		if(browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+
 			driver = new ChromeDriver();
 		}else if(browser.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", "D:\\JAVA\\EXE Files\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "./src/main/resources/msedgedriver.exe");
 			driver = new EdgeDriver();			
 		}else if(browser.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", "");

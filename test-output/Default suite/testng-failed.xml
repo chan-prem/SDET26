@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.SDET26.Opportunity.CreateOpportunityAndClickonSave">
+      <class name="com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest">
         <methods>
           <include name="dataBaseConnection"/>
+          <include name="clickOnCancelAndAlltheFillsClearedorNot"/>
           <include name="login"/>
-          <include name="createOpportunityAndClickonSave"/>
           <include name="closeBrowser"/>
           <include name="disconnectDB"/>
           <include name="browserLaunch"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.crm.SDET26.Opportunity.CreateOpportunityAndClickonSave -->
+      </class> <!-- com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,7 +16,7 @@ import com.crm.SDET26.pomRepository.OrganizationPage;
 
 
 @Listeners(com.crm.SDET26.genericUtility.ListenerImpClass.class)
-public class CreateOpportunityAndClickonSave extends BaseClass{
+public class CreateOpportunityAndClickonSaveTest extends BaseClass{
 
 	@Test
 	public void createOpportunityAndClickonSave() throws Throwable{
