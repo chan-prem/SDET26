@@ -1,44 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="2" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31120" started-at="2021-12-11T06:17:53Z" finished-at="2021-12-11T06:18:24Z">
+  <suite name="Failed suite [Suite]" duration-ms="55266" started-at="2021-12-12T18:34:33Z" finished-at="2021-12-12T18:35:28Z">
     <groups>
       <group name="SmokeTest">
-        <method signature="ClickOnCancelAndAllTheFillsAreClearOrNotTest.clickOnCancelAndAlltheFillsClearedorNot()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="clickOnCancelAndAlltheFillsClearedorNot" class="com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest"/>
+        <method signature="ClickOnSaveAndAllTheFillSareSaveOrNotTest.cickOnSaveAndAllTheFillSareSaveOrNot()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="cickOnSaveAndAllTheFillSareSaveOrNot" class="com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest"/>
       </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="CreateOpportunitywithSalesStageClosedLostTest.createOpportunitywithSalesStageClosedLost()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="createOpportunitywithSalesStageClosedLost" class="com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test name="Default test" duration-ms="31120" started-at="2021-12-11T06:17:53Z" finished-at="2021-12-11T06:18:24Z">
-      <class name="com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest">
-        <test-method status="PASS" signature="dataBaseConnection()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="dataBaseConnection" is-config="true" duration-ms="0" started-at="2021-12-11T06:17:53Z" finished-at="2021-12-11T06:17:53Z">
+    <test name="Test(failed)" duration-ms="55266" started-at="2021-12-12T18:34:33Z" finished-at="2021-12-12T18:35:28Z">
+      <class name="com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest">
+        <test-method status="PASS" signature="dataBaseConnection()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="dataBaseConnection" is-config="true" duration-ms="10" started-at="2021-12-12T18:34:33Z" finished-at="2021-12-12T18:34:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataBaseConnection -->
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="browserLaunch" is-config="true" duration-ms="3190" started-at="2021-12-11T06:17:53Z" finished-at="2021-12-11T06:17:56Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="browserLaunch" is-config="true" duration-ms="3019" started-at="2021-12-12T18:34:33Z" finished-at="2021-12-12T18:34:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="login" is-config="true" duration-ms="3208" started-at="2021-12-11T06:17:56Z" finished-at="2021-12-11T06:18:00Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="login" is-config="true" duration-ms="8729" started-at="2021-12-12T18:34:36Z" finished-at="2021-12-12T18:34:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="clickOnCancelAndAlltheFillsClearedorNot()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="clickOnCancelAndAlltheFillsClearedorNot" duration-ms="22790" started-at="2021-12-11T06:18:00Z" finished-at="2021-12-11T06:18:22Z">
+        <test-method status="FAIL" signature="cickOnSaveAndAllTheFillSareSaveOrNot()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="cickOnSaveAndAllTheFillSareSaveOrNot" duration-ms="22480" started-at="2021-12-12T18:34:45Z" finished-at="2021-12-12T18:35:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest.cickOnSaveAndAllTheFillSareSaveOrNot(ClickOnSaveAndAllTheFillSareSaveOrNotTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnCancelAndAlltheFillsClearedorNot -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="logout" is-config="true" duration-ms="1220" started-at="2021-12-11T06:18:22Z" finished-at="2021-12-11T06:18:24Z">
+        </test-method> <!-- cickOnSaveAndAllTheFillSareSaveOrNot -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="logout" is-config="true" duration-ms="1413" started-at="2021-12-12T18:35:07Z" finished-at="2021-12-12T18:35:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="closeBrowser" is-config="true" duration-ms="690" started-at="2021-12-11T06:18:24Z" finished-at="2021-12-11T06:18:24Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="closeBrowser" is-config="true" duration-ms="707" started-at="2021-12-12T18:35:09Z" finished-at="2021-12-12T18:35:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="disconnectDB()[pri:0, instance:com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest@42e26948]" name="disconnectDB" is-config="true" duration-ms="0" started-at="2021-12-11T06:18:24Z" finished-at="2021-12-11T06:18:24Z">
+        <test-method status="PASS" signature="disconnectDB()[pri:0, instance:com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest@548e7350]" name="disconnectDB" is-config="true" duration-ms="0" started-at="2021-12-12T18:35:28Z" finished-at="2021-12-12T18:35:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disconnectDB -->
-      </class> <!-- com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest -->
+      <class name="com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="browserLaunch" is-config="true" duration-ms="1558" started-at="2021-12-12T18:35:09Z" finished-at="2021-12-12T18:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="login" is-config="true" duration-ms="2599" started-at="2021-12-12T18:35:11Z" finished-at="2021-12-12T18:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="createOpportunitywithSalesStageClosedLost()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="createOpportunitywithSalesStageClosedLost" duration-ms="12611" started-at="2021-12-12T18:35:14Z" finished-at="2021-12-12T18:35:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Team Selling] but found [Team Selling  ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Team Selling] but found [Team Selling  ]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest.createOpportunitywithSalesStageClosedLost(CreateOpportunitywithSalesStageClosedLostTest.java:69)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOpportunitywithSalesStageClosedLost -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="logout" is-config="true" duration-ms="1037" started-at="2021-12-12T18:35:26Z" finished-at="2021-12-12T18:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest@77cd7a0]" name="closeBrowser" is-config="true" duration-ms="732" started-at="2021-12-12T18:35:27Z" finished-at="2021-12-12T18:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>

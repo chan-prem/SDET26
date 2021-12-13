@@ -25,10 +25,10 @@ public class SampleJDBCExecuteQuery {
 	//step4: execute a query -provide table name
 		ResultSet result = stat.executeQuery("select  * from empInfo;");
 		
-		
+		//since I don't know the range, I go with while loop. 
 			while(result.next())
 			{
-			System.out.println(result.getString(1)+ " " + result.getInt(2) + " " + result.getString(3));
+			System.out.println(result.getString(1)+ " " + result.getString(2) + " " + result.getString(3));
 			}
 		
 		

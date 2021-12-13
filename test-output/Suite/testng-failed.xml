@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <test thread-count="2" name="Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.crm.SDET26.Opportunity.CreateOpportunitywithSalesStageClosedLost">
+      <class name="com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="cickOnSaveAndAllTheFillSareSaveOrNot"/>
+          <include name="login"/>
+          <include name="closeBrowser"/>
+          <include name="disconnectDB"/>
+          <include name="browserLaunch"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest -->
+      <class name="com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest">
         <methods>
           <include name="dataBaseConnection"/>
           <include name="login"/>
@@ -13,18 +24,7 @@
           <include name="browserLaunch"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.crm.SDET26.Opportunity.CreateOpportunitywithSalesStageClosedLost -->
-      <class name="com.crm.SDET26.Opportunity.ClickOnSaveAndAllTheFillSareSaveOrNot">
-        <methods>
-          <include name="cickOnSaveAndAllTheFillSareSaveOrNot"/>
-          <include name="dataBaseConnection"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="disconnectDB"/>
-          <include name="browserLaunch"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- com.crm.SDET26.Opportunity.ClickOnSaveAndAllTheFillSareSaveOrNot -->
+      </class> <!-- com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

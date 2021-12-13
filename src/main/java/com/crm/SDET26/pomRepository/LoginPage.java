@@ -19,7 +19,7 @@ public class LoginPage extends WebDriverUtility{
 	}
 	
 	@FindBy(name = "user_name")
-	private WebElement userNameEdt;
+	private WebElement userNameEdt;   
 	
 	@FindBy(name = "user_password")
 	private WebElement userPasswordEdt;
@@ -48,6 +48,8 @@ public class LoginPage extends WebDriverUtility{
 	public void loginToApp() throws Throwable {
 		FileUtility fLib = new FileUtility();
 		driver.manage().window().maximize();
+		waitForPageToLoad(driver);
+
 		driver.get(fLib.getPropertyKeyValue("url"));
 		userNameEdt.sendKeys(fLib.getPropertyKeyValue("username"));
 		userPasswordEdt.sendKeys(fLib.getPropertyKeyValue("password"));

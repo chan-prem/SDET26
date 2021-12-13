@@ -175,7 +175,7 @@ public class WebDriverUtility {
 	 */
 	public void executeJavaScript(WebDriver driver , String javaScript) {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeAsyncScript(javaScript, null);
+		js.executeAsyncScript(javaScript);
 	}
 	
 	   public void waitAndClick(WebElement element) throws InterruptedException

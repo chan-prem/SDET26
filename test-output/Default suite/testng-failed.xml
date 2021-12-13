@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest">
+      <class name="com.crm.SDET26.basicScripts.DontKnow">
         <methods>
-          <include name="dataBaseConnection"/>
-          <include name="clickOnCancelAndAlltheFillsClearedorNot"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="disconnectDB"/>
-          <include name="browserLaunch"/>
-          <include name="logout"/>
+          <include name="dontknow"/>
         </methods>
-      </class> <!-- com.crm.SDET26.Opportunity.ClickOnCancelAndAllTheFillsAreClearOrNotTest -->
+      </class> <!-- com.crm.SDET26.basicScripts.DontKnow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

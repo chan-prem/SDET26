@@ -6,13 +6,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.testng.Reporter;
+import org.testng.annotations.Test;
 
 import com.mysql.cj.jdbc.Driver;
 
 public class SampleJDBCExecuteUpdate {
 
-	public static void main(String[] args) throws SQLException {
-		
+@Test
+public void sampleJDBCExecuteUpdate() throws SQLException {
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sdet26", "root", "root");
 
 
@@ -22,7 +23,7 @@ public class SampleJDBCExecuteUpdate {
 			DriverManager.registerDriver(driverRef);
 			Statement stat = con.createStatement();
 
-			int result = stat.executeUpdate("insert into empInfo  ('Batman',12,'Maryland');");
+			int result = stat.executeUpdate("insert into empInfo ('Batman',99,'Maryland');");
 			if(result == 1)
 			{
 				Reporter.log("data created successfully", true);
@@ -38,7 +39,6 @@ public class SampleJDBCExecuteUpdate {
 		}
 		finally {
 			con.close();
-			System.out.println("sadad");
 		}
 		
 		
