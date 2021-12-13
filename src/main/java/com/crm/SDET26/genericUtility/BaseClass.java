@@ -29,12 +29,12 @@ public class BaseClass {
 	}
 	
 	public	WebDriver driver = null;
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
-		public void browserLaunch(String browser) throws Throwable {
-		//public void browserLaunch() throws Throwable {
+		//public void browserLaunch(String browser) throws Throwable {
+		public void browserLaunch() throws Throwable {
 			
-		//String browser = fLib.getPropertyKeyValue("browser");
+		String browser = fLib.getPropertyKeyValue("browser");
 
 		if(browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
