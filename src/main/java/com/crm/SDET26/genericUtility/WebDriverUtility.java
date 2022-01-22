@@ -149,10 +149,10 @@ public class WebDriverUtility {
 	 * @param driver
 	 * @param elemnet
 	 */
-	public void mouseOverOnElemnet(WebDriver driver , WebElement elemnet)
+	public void mouseOverOnElemnet(WebDriver driver , WebElement element)
 	{
 		Actions act = new Actions(driver);
-		act.moveToElement(elemnet).perform();
+		act.moveToElement(element).perform();
 	}
 	
 	/**
@@ -162,10 +162,10 @@ public class WebDriverUtility {
 	 * @param elemnet
 	 */
 	
-	public void rightClickOnElement(WebDriver driver , WebElement elemnet)
+	public void rightClickOnElement(WebDriver driver , WebElement element)
 	{
 		Actions act = new Actions(driver);
-		act.contextClick(elemnet).perform();
+		act.contextClick(element).perform();
 	}
 	
 	/**

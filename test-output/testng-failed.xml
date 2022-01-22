@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
-  <test thread-count="5" name="Test(failed)(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest">
+      <class name="com.crm.SDET26.practice.WebSite">
         <methods>
-          <include name="dataBaseConnection"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="createOpportunitywithSalesStageClosedLost"/>
-          <include name="disconnectDB"/>
-          <include name="browserLaunch"/>
-          <include name="logout"/>
+          <include name="webSite"/>
         </methods>
-      </class> <!-- com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest -->
-      <class name="com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest">
-        <methods>
-          <include name="dataBaseConnection"/>
-          <include name="cickOnSaveAndAllTheFillSareSaveOrNot"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="disconnectDB"/>
-          <include name="browserLaunch"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest -->
+      </class> <!-- com.crm.SDET26.practice.WebSite -->
     </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest">
         <methods>
@@ -14,17 +19,6 @@
           <include name="logout"/>
         </methods>
       </class> <!-- com.crm.SDET26.opportunity.ClickOnSaveAndAllTheFillSareSaveOrNotTest -->
-      <class name="com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest">
-        <methods>
-          <include name="dataBaseConnection"/>
-          <include name="login"/>
-          <include name="closeBrowser"/>
-          <include name="createOpportunitywithSalesStageClosedLost"/>
-          <include name="disconnectDB"/>
-          <include name="browserLaunch"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- com.crm.SDET26.opportunity.CreateOpportunitywithSalesStageClosedLostTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

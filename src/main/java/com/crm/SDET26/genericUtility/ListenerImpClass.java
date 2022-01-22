@@ -32,7 +32,7 @@ public class ListenerImpClass implements ITestListener{
 		String testName = result.getMethod().getMethodName();
 		EventFiringWebDriver eDriver = new EventFiringWebDriver(BaseClass.sDriver);
 		File srcFile = eDriver.getScreenshotAs(OutputType.FILE);
-		
+			
 		Date dateObj = new Date();
 		String dateAndTime = dateObj.toString().replace(":", "_");
 				

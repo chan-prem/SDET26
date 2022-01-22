@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.SDET26.basicScripts.DontKnow">
+      <class name="com.crm.SDET26.practice.WebSite">
         <methods>
-          <include name="dontknow"/>
+          <include name="webSite"/>
         </methods>
-      </class> <!-- com.crm.SDET26.basicScripts.DontKnow -->
+      </class> <!-- com.crm.SDET26.practice.WebSite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

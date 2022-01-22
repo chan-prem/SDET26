@@ -67,5 +67,6 @@ public class CreateOpportunitywithSalesStageClosedLostTest extends BaseClass{
 		String selectedSalesStage = oppInfo.getSalesstageresult().getText();
 		s.assertEquals(selectedSalesStage, salesstage);
 		s.assertAll();
+
 	}
 }
